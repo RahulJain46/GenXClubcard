@@ -1,0 +1,35 @@
+1. To work with the file system on the computer: we need to add a file system module. 
+To include the File System module, use the require() method:
+
+var fs = require('fs');
+  
+Asynchronous methods take the last parameter as the completion function callback and the first parameter of the callback function as error. It is better to use an asynchronous method instead of a synchronous method, as the former never blocks a program during its execution, whereas the second one does.
+var fs = require("fs");
+
+// Asynchronous read
+fs.readFile('input.txt', function (err, data) {
+   if (err) {
+      return console.error(err);
+   }
+   console.log("Asynchronous read: " + data.toString());
+});
+
+// Synchronous read
+var data = fs.readFileSync('input.txt');
+console.log("Synchronous read: " + data.toString());
+
+console.log("Program Ended")
+
+fs.open(path, flags[, mode], callback)
+path : This is the string having file name including path.
+flags − Flags indicate the behavior of the file to be opened. All possible values have been mentioned below.
+mode − It sets the file mode (permission and sticky bits), but only if the file was created. It defaults to 0666, readable and writeable.
+callback − This is the callback function which gets two arguments (err, fd).
+
+
+
+  
+  
+ Explore :  
+1. chaining of callbacks ? 
+2.   
