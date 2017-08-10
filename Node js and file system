@@ -37,4 +37,4 @@ callback − This is the callback function which gets two arguments (err, fd).
 
 Error-first callbacks are used to pass errors and data as well. You have to pass the error as the first parameter, and it has to be checked to see if something went wrong. Additional arguments are used to pass data.
 What are Promises?
-
+What's a stub? Name a use case!
