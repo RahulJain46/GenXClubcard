@@ -43,3 +43,16 @@ lots of low-level unit tests for models (dependencies are stubbed),
 fewer integration tests, where you check how your models interact with each other (dependencies are not stubbed),
 less end-to-end tests, where you call your actual endpoints (dependencies are not stubbed).
 What's your favorite HTTP framework and why?
+When are background/worker processes useful? How can you handle worker tasks?
+
+
+How can you secure your HTTP cookies against XSS attacks?
+
+XSS occurs when the attacker injects executable JavaScript code into the HTML response.
+
+To mitigate these attacks, you have to set flags on the set-cookie HTTP header:
+
+HttpOnly - this attribute is used to help prevent attacks such as cross-site scripting since it does not allow the cookie to be accessed via JavaScript.
+secure - this attribute tells the browser to only send the cookie if the request is being sent over HTTPS.
+So it would look something like this: Set-Cookie: sid=<cookie-value>; HttpOnly. If you are using Express, with express-cookie session, it is working by default.
+
