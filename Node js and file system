@@ -42,3 +42,4 @@ What's a test pyramid? Give an example!
 lots of low-level unit tests for models (dependencies are stubbed),
 fewer integration tests, where you check how your models interact with each other (dependencies are not stubbed),
 less end-to-end tests, where you call your actual endpoints (dependencies are not stubbed).
+What's your favorite HTTP framework and why?
