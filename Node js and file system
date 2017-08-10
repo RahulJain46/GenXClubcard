@@ -38,3 +38,7 @@ callback − This is the callback function which gets two arguments (err, fd).
 Error-first callbacks are used to pass errors and data as well. You have to pass the error as the first parameter, and it has to be checked to see if something went wrong. Additional arguments are used to pass data.
 What are Promises?
 What's a stub? Name a use case!
+What's a test pyramid? Give an example!
+lots of low-level unit tests for models (dependencies are stubbed),
+fewer integration tests, where you check how your models interact with each other (dependencies are not stubbed),
+less end-to-end tests, where you call your actual endpoints (dependencies are not stubbed).
