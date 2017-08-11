@@ -56,3 +56,5 @@ HttpOnly - this attribute is used to help prevent attacks such as cross-site scr
 secure - this attribute tells the browser to only send the cookie if the request is being sent over HTTPS.
 So it would look something like this: Set-Cookie: sid=<cookie-value>; HttpOnly. If you are using Express, with express-cookie session, it is working by default.
 
+1) What is Node.js?
+Node.js is a very powerful JavaScript based platform or framework which is built on Google Chrome's JavaScript V8 Engine.
