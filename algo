@@ -47,3 +47,11 @@ Round 2- Some DS related stuff - BST, find the top 10 items in BST.
 1. Difference between abstract class and interface.
 2. some design related question(I don't remember that)
 3. What kind of exception hierarchy you would prefer to create for your application. Explain in detail.  
+1) reverse a string,
+give different approaches for the same.
+2) Some reasoning questions
+3) How to find the middle node of a linked list
+4) find the intersection point of two linked lists  
+It starts with an online written test which contains a problem based on bfs/dfs/searching algorithm which you are require to complete within 2 hours. After cracking this round 3 technical rounds were there followed by one HR round. Technical rounds mostly deal with algorithms and data structures. Graph and Tree traversals. Some optimization problems and one design discussion.
+
+Explain the projects mentioned in the resume with architecture diagrams.  
