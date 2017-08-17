@@ -44,3 +44,6 @@ Given a BST, find k-th largest element without using extra space.
 - Reason to compile Linux driver as a module or statically into the kernel?  
 Asked the C#.net related topics (delegates,events, task,thread,singleton, interface,abstract,exception,abstraction/encasulation)
 Round 2- Some DS related stuff - BST, find the top 10 items in BST.  
+1. Difference between abstract class and interface.
+2. some design related question(I don't remember that)
+3. What kind of exception hierarchy you would prefer to create for your application. Explain in detail.  
