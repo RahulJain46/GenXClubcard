@@ -28,3 +28,11 @@ e.g. const pointers and pointers to const.
 4. Wrote a few codes on run-time polymorphism and asked me to write the outputs.
 e.g. virtual destructor, inheritance with virtual keyword.
 5. Asked me what pure virtual classes are?
+They asked about data structures too. Implementation of Sorting algorithm with their complexity explained.
+coding question was a graph question 
+Coding round on Hackerank.
+One was to output the decimal number after inverting the binary representation of input number. Second was to find maximum sum sub-array of input array. Third was on BST.
+In the snake and ladder game, compute the minimum number of dice throws to complete the game. I was only asked to give rough idea of the solution.  
+Print sum of all prime numbers within a given range.
+Given a BST, find k-th largest element without using extra space.  
+Given a BST, find k-th largest element without using extra space.  
