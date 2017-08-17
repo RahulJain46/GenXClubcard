@@ -39,3 +39,8 @@ Given a BST, find k-th largest element without using extra space.
  linked lists,stacks.
  How to find a loop In linked list how to reverse a linked list  
  mostly asked about c/c++ ,data structure and algorithms. asked about pointer ,heap ,stack ,sorting .
+ - Difference between CPU/GPU?
+- How do Linux interrupts work?
+- Reason to compile Linux driver as a module or statically into the kernel?  
+Asked the C#.net related topics (delegates,events, task,thread,singleton, interface,abstract,exception,abstraction/encasulation)
+Round 2- Some DS related stuff - BST, find the top 10 items in BST.  
