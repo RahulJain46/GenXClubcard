@@ -1,0 +1,30 @@
+Samsung : 
+1. Merge k sorted linked-list
+2. Search in rotated sorted array
+3. Design LRU system  
+4. write a program to create circular queue?  
+5. Web Development: Difference between RESTful & SOAP (include security point)?  
+6. Operating System: Interprocess Communication and its types.  
+7. Database: What is Foreign keys? they will ask related case scenarios  
+Design and Development of REST API.
+Scaling large scale websites.
+Complex MySql Queries etc.  
+What are the differences between Java and C++. Describe Java's garbage collection. A bunch of questions about threads  
+threading and memory management.
+A search question which uses recursion 
+Several rounds with various topics like coding, algorithms, logic, ML, statistics.  
+Problem was to create an array from one input array where every element in output array is the next biggest element from that element.  
+
+complexity of the program.
+Given a graph, find out if it can be colored using 2 colors. Different colors for alternate nodes (3 hours) people who passed all 10 test cases were shortlisted.
+Note- You can compile your code as many number of times as you want, but a maximum of 5 submissions were allowed to test on the given test cases.
+
+10. OOPS-
+Critical Section, Mutex , Semaphores, Paging, Techniques to swap out pages (Least recently used, least frequently used).
+9. Asked to write my own typedef operator- I used function template to write a generic function.
+8. Asked if I knew Dijkstra’s Algorithm, I said yes, asked if I could write the pseudo code- I wrote it fast, Asked to explain why Dijkstra’s algo fails when -ve weights are there in the graph.
+6. A few codes on pointers, asked me the outputs.
+e.g. const pointers and pointers to const.
+4. Wrote a few codes on run-time polymorphism and asked me to write the outputs.
+e.g. virtual destructor, inheritance with virtual keyword.
+5. Asked me what pure virtual classes are?
