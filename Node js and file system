@@ -62,3 +62,9 @@ Node.js is a very powerful JavaScript based platform or framework which is built
 
 Basic concept of threats : 
 hread is an execution unit which consists of its own program counter, a stack, and a set of registers. Threads are also known as Lightweight processes. Threads are popular way to improve application through parallelism. The CPU switches rapidly back and forth among the threads giving illusion that the threads are running in parallel.
+
+Synchronous :
+when the client sends a message to the server it waits until the server has responded before continuing with further processing.
+major benefit  :implifies programming and makes your life as a developer easier.
+Disadvantage : 
+users of the client because they are required to wait for the middle tier to finish processing before they can get on with another task. Another issue that is particularly visible when the application isn't used on the local network is lag.
