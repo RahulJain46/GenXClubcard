@@ -68,3 +68,6 @@ when the client sends a message to the server it waits until the server has resp
 major benefit  :implifies programming and makes your life as a developer easier.
 Disadvantage : 
 users of the client because they are required to wait for the middle tier to finish processing before they can get on with another task. Another issue that is particularly visible when the application isn't used on the local network is lag.
+Asynchronous:
+D : The development of applications is more complicated and can require more time to implement the needed functionality.
+
