@@ -58,3 +58,7 @@ So it would look something like this: Set-Cookie: sid=<cookie-value>; HttpOnly. 
 
 1) What is Node.js?
 Node.js is a very powerful JavaScript based platform or framework which is built on Google Chrome's JavaScript V8 Engine.
+
+
+Basic concept of threats : 
+hread is an execution unit which consists of its own program counter, a stack, and a set of registers. Threads are also known as Lightweight processes. Threads are popular way to improve application through parallelism. The CPU switches rapidly back and forth among the threads giving illusion that the threads are running in parallel.
