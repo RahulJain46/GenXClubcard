@@ -71,3 +71,51 @@ users of the client because they are required to wait for the middle tier to fin
 Asynchronous:
 D : The development of applications is more complicated and can require more time to implement the needed functionality.
 
+
+Javascript : Asysnc -
+
+Code is normally placed on the call stack before being executed.
+The call stack is a segment of memory that keeps track of the order
+of functions in which they were called.
+The events loop, is the process in which the browser queues up tasks
+and executes them, one at a time, by putting them on the call stack.
+Now how does the browser queue up tasks?
+In the beginning of an application, all the JavaScript code is run til
+completion and placed in the call stack in order of execution.
+The event que is initially empty.
+As events occur,
+event handlers place new tasks onto the event queue.
+Some examples of these events are mouse clicks, keyboard presses,
+and timed events.
+These tasks waits on the events queue until the call stack is empty.
+Once the call stack is empty,
+the first task in the queue is put on to the stack.
+The subsequent tasks wait until the call stack is empty again,
+and the cycle repeats.
+This cycle is the events loop
+Now how do asynchronous functions fit into the event loop?
+When the JavaScript runtime comes across an asynchronous
+function in the call stack, it does not process it immediately.
+Instead of blocking the call stack until it is finished, it allows
+another process to handle processing of the asynchronous function.
+When the other process has finished,
+it adds a task back on to the event queue.
+This task Is usually a callback function, passed
+in as one of the arguments, to the original asynchronous function.
+You are probably thinking to yourselves,
+didn't you just say JavaScript was single-threaded?
+Well, the JavaScript runtime is single-threaded, but there are other
+processes running in a browser, such as timers, input handlers,
+and network request APIs that run in parallel with the event loop.
+These parallel processes communicates with the event loop
+by putting new tasks on to the event queue.
+So why are asynchronous functions important?
+They are important because some tasks, such as network request
+are slow and users will become upset if their browsers freeze up
+because of slow network request blocked other code from running.
+Asynchronous requests allow slow tasks to be operated
+on a separate thread to stop a task from blocking the browser.
+Call backs are used to specify what new tasks are sent back to the event
+queue once the other process has finished processing
+the original task.
+And that is the story of the event loop.
