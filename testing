@@ -1,0 +1,52 @@
+Functionality Testing 
+The main goal of Functional testing is to make sure that all the functions within a web app are working smoothly without any technical glitches. If Functional testing is not done then all the links in web pages, database connection, forms used in the web pages for submitting or getting information from user and Cookie testing etc will remain untested and application may not work as per the customer expectation.
+
+Verify the workflow of the system
+Verify there is no dead page or invalid redirects
+First check all the validations on each field
+Wrong inputs to perform negative testing
+Verify the data integrity
+User Interface / Experience Testing  
+When it comes to making the application user-friendly and effective, its user interface and general user experience should comply with the standards defined.  If user testing is not done then menu controls, content checking and the overall consistency of the applications UI and user experience may stray from the original design requirements, resulting in a negative user experience.
+
+UI of the components e.g. Menu
+Content checking
+UI consistency
+Ease of use
+Compatibility Testing  
+Compatibility testing of your web application is one of the most crucial things you should consider testing. It checks the web application for browser compatibility, operating system compatibility, mobile browsing and printing options and users may face compatibility issues if this not done.
+
+Browser compatibility
+Operating system compatibility
+UI consistency
+Compatible with devices, e.g. tablet, mobile, etc.
+Performance Testing  
+Performance testing helps you to determine the performance of your web application under various scenarios. Performance testing usually involves stress testing, and load testing.
+
+Website load testing
+Website stress testing
+Security & Penetration Testing  
+Application security is an important factor in any web application and the security testing process is intended to reveal flaws in the security mechanisms of an information system, protect data and maintain functionality as intended. Security testing includes:
+
+Injection
+Broken Authentication and Session Management
+Cross-Site Scripting (XSS)
+Insecure Direct Object References
+Security Misconfiguration
+Sensitive Data Exposure
+Missing Function Level Access Control
+Cross-Site Request Forgery (CSRF)
+Using Components with Known Vulnerabilities
+Invalidated Redirects and Forwards
+Penetration testing is a software attack on a computer system that looks for security weaknesses, potentially gaining access to the computer’s features and data. Effective penetration testing is a vital tool in the fight against attacks by mimicking malicious attacks, but providing you the feedback to help you defend against them. Our penetration testing services include:
+
+Configuration and Deployment Management Testing
+Identity Management Testing
+Authentication Testing
+Authorization Testing
+Session Management Testing
+Input Validation Testing
+Error Handling
+Cryptography
+Business Logic Testing
+Client Side Testing
