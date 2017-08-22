@@ -119,3 +119,14 @@ Call backs are used to specify what new tasks are sent back to the event
 queue once the other process has finished processing
 the original task.
 And that is the story of the event loop.
+
+
+A promise is a container that holds the eventual result of
+an asynchronous operation.
+Before promises,
+callbacks were commonly used to handle asynchronous results.
+The problem with callbacks is that if there are too many of them
+chained together, the code becomes a pyramid of callbacks that is hard to
+read and hard to manage, especially when handling errors.
+On the other hand, promises are much easier to chain together and
+have a great way of handling errors.
