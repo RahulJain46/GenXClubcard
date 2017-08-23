@@ -130,3 +130,23 @@ chained together, the code becomes a pyramid of callbacks that is hard to
 read and hard to manage, especially when handling errors.
 On the other hand, promises are much easier to chain together and
 have a great way of handling errors.
+
+
+The Fetch API is an interface built into
+the browser that allows users to make network requests.
+Great, So why should you use it?
+Well, it is a much needed improvement over the XML HTTP
+request API, which was the previous method for making that work request.
+The XML HTTP request API required a lot of boilerplate code,
+which made it very hard to follow.
+Developers often used third party libraries such as jQuery
+to wrap the XML HTTP request API in a much more usable way.
+However, with the fetch API,
+developers now have an easy to use method for
+making network requests that doesn't require any external libraries.
+So how easy is it to use the Fetch API?
+Well, in its simplest form, all you need to use is the Fetch method and
+plug in the URL endpoint of your network request, and that's it.
+The Fetch method will return a promise that will hold a fetch
+response, and from that response you can obtain the data that you
+are trying to receive.
