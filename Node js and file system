@@ -168,3 +168,4 @@ Another React performance tool worth mentioning is why-did-you-update. This npm 
 
 What makes a React app slow is, most of the time, useless rerenders of many components.
 shouldComponentUpdate(). By default, React always renders a component to the virtual DOM. In other terms, it's your job as a developer to check that the props of a component didn't change and skip rendering altogether in that case.
+
