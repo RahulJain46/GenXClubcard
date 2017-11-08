@@ -150,3 +150,12 @@ plug in the URL endpoint of your network request, and that's it.
 The Fetch method will return a promise that will hold a fetch
 response, and from that response you can obtain the data that you
 are trying to receive.
+
+
+
+Tree shaking : Webpack 2
+So, what we've learned is that in order to take advantage of tree shaking, you must...
+
+Use ES2015 module syntax (i.e. import and export).
+Include a minifier that supports dead code removal (e.g. the UglifyJSPlugin).
+You can imagine your application as a tree. The source code and libraries you actually use represent the green, living leaves of the tree. Dead code represents the brown, dead leaves of the tree that are consumed by autumn. In order to get rid of the dead leaves, you have to shake the tree, causing them fall.
