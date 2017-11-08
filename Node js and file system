@@ -159,3 +159,7 @@ So, what we've learned is that in order to take advantage of tree shaking, you m
 Use ES2015 module syntax (i.e. import and export).
 Include a minifier that supports dead code removal (e.g. the UglifyJSPlugin).
 You can imagine your application as a tree. The source code and libraries you actually use represent the green, living leaves of the tree. Dead code represents the brown, dead leaves of the tree that are consumed by autumn. In order to get rid of the dead leaves, you have to shake the tree, causing them fall.
+
+performace optimisation :
+Profiling Components with Chrome Timeline
+You can now visualize React components in the Chrome Timeline. This lets you see which components exactly get mounted, updated, and unmounted, how much time they take relative to each other.
