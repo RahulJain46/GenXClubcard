@@ -163,3 +163,5 @@ You can imagine your application as a tree. The source code and libraries you ac
 performace optimisation :
 Profiling Components with Chrome Timeline
 You can now visualize React components in the Chrome Timeline. This lets you see which components exactly get mounted, updated, and unmounted, how much time they take relative to each other.
+
+Another React performance tool worth mentioning is why-did-you-update. This npm package patches React to emit console warnings whenever a component rerenders with identical props. Caveats: The output is verbose, and it doesn't work on functional components.
