@@ -1,0 +1,27 @@
+1. //palindrome
+
+function palindrome(str) {
+     var flag = 0;
+     for(var i=0; i<=str.length; i++){
+           if(str[i]!=str[str.length-i-1]){
+             flag=1;
+             break;
+           }
+     }
+     if(flag){
+       console.log("number is not palindrome");
+     }else{
+       console.log("number is palindrome");
+     }
+}
+
+palindrome("Rahul");
+palindrome("aba");
+palindrome("abab");
+palindrome("aabaa");
+palindrome("asdfg");
+palindrome("12321");
+
+
+2. 
+
