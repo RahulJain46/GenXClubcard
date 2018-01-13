@@ -1,0 +1,11 @@
+Localstorage and cookies :
+Web storage is nothing but client side storage.Right now we are using cookies for the purpose of storing objects locally in client machine(in browser).
+Cookies can able to store only 4k of data. For each domain browser will assign 4k of memory.
+Each time browser has to send cookie along with HTTP request,it’s inefficient especially if you are using mobile device with not a lot of bandwidth.
+
+A simple JavaScript API in the browser for storing Key value pairs that are persistent and you are not limited to 4k of memory.
+All browsers today offering 5-10 MB of storage in every user’s browser.i.e., For each domain 5MB of local storage.
+Example : 
+localstorage.setItem("key1","value1"); 
+var value=localstorage.getItem("key1");
+alert(value);
