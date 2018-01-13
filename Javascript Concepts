@@ -13,3 +13,5 @@ alert(value);
 
 Session storage : 
 If you substitute the global variable sessionStorage everywhere you’ve used localStorage then your items are stored only during the browser session. So, as soon as that session is over (in other words, the user closes the browser window), the items in storage are removed.The sessionStorage object supports exactly the same API as Local Storage.
+
+if you want to store arrays or objects into local storage use JSON.stringify to store the value and JSON.parse to retrive the value.
