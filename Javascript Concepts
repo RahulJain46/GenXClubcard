@@ -36,4 +36,4 @@ Strict Mode, :  if the program is not running in “Strict Mode,”1 then the gl
 One such behavior is that it disallows the automatic/implicit global variable creation
 
 Both eval(..) and with cheat the otherwise author-time defined lex‐ ical scope by modifying or creating new lexical scope at runtime.
-
+ in the pessimistic sense, most of those optimizations it would make are pointless if eval(..) or with are present, so it simply doesn’t perform the optimizations at all.
