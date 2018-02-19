@@ -34,3 +34,6 @@ undeclared : look up occurance of first time and havn't notice , will throw this
 ReferenceError : find a variable, anywhere in the nested scopes, this results in a ReferenceError being thrown by the engine.
 Strict Mode, :  if the program is not running in “Strict Mode,”1 then the global scope will create a new vari‐ able of that name in the global scope, and hand it back to Engine.
 One such behavior is that it disallows the automatic/implicit global variable creation
+
+Both eval(..) and with cheat the otherwise author-time defined lex‐ ical scope by modifying or creating new lexical scope at runtime.
+
