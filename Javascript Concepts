@@ -17,3 +17,7 @@ If you substitute the global variable sessionStorage everywhere you’ve used lo
 if you want to store arrays or objects into local storage use JSON.stringify to store the value and JSON.parse to retrive the value.
 
  == checks for value equality and === checks for both value and type equality. 
+ 
+ 
+Tokenizing/Lexing
+Breaking up a string of characters into meaningful (to the lan‐ guage) chunks, called tokens. 
