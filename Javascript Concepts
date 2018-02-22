@@ -57,3 +57,4 @@ for (let i=1; i<=5; i++) { setTimeout( function timer(){
 To state it more simply, there are two requirements for the module pattern to be exercised:
 1. There must be an outer enclosing function, and it must be invoked at least once (each time creates a new module instance).
 2. The enclosing function must return back at least one inner func‐ tion, so that this inner function has closure over the private scope, and can access and/or modify that private state.
+
