@@ -1,3 +1,6 @@
+When to use memchached and when to use redis ?
+
+
 Step 1: Outline use cases, constraints, and assumptions : 
 Discuss assumptions.
 
