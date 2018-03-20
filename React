@@ -1,2 +1,36 @@
 How to render static html from external resource : 
 dangerouslySetInnerHTML is React’s replacement for using innerHTML in the browser DOM. In general, setting HTML from code is risky because it’s easy to inadvertently expose your users to a cross-site scripting (XSS) attack. So, you can set HTML directly from React, but you have to type out dangerouslySetInnerHTML and pass an object with a __html key, to remind yourself that it’s dangerous. 
+
+
+React lifecycle methods :
+
+Mounting --
+
+Render : 
+The render() function should be pure, meaning that it does not modify component state, it returns the same result each time it’s invoked, and it does not directly interact with the browser.
+
+constructor : 
+you should call super(props) before any other statement. Otherwise, this.props will be undefined in the constructor, which can lead to bugs.
+
+The constructor is the right place to initialize state. To do so, just assign an object to this.state; don’t try to call setState() from the constructor. The constructor is also often used to bind event handlers to the class instance.
+componentWillMount():
+componentWillMount() is invoked just before mounting occurs. It is called before render(), therefore calling setState() synchronously in this method will not trigger an extra rendering. Generally, we recommend using the constructor() instead.
+
+omponentDidMount():
+componentDidMount() is invoked immediately after a component is mounted.
+This method is a good place to set up any subscriptions
+If you need to load data from a remote endpoint, this is a good place to instantiate the network request.
+
+componentWillReceiveProps():
+ is invoked before a mounted component receives new props. If you need to update the state in response to prop changes 
+ 
+ shouldComponentUpdate():
+ Use shouldComponentUpdate() to let React know if a component’s output is not affected by the current change in state or props. The default behavior is to re-render on every state change, and in the vast majority of cases you should rely on the default behavior.
+ 
+ componentWillUpdate()
+ componentWillUpdate() is invoked just before rendering when new props or state are being received. Use this as an opportunity to perform preparation before an update occurs. 
+ 
+ componentDidUpdate() is invoked immediately after updating occurs. This method is not called for the initial render.
+
+Use this as an opportunity to operate on the DOM when the component has been updated. This is also a good place to do network requests as long as you compare the current props to previous props (e.g. a network request may not be necessary if the props have not changed).
+
