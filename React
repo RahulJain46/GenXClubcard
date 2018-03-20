@@ -15,22 +15,40 @@ you should call super(props) before any other statement. Otherwise, this.props w
 The constructor is the right place to initialize state. To do so, just assign an object to this.state; don’t try to call setState() from the constructor. The constructor is also often used to bind event handlers to the class instance.
 componentWillMount():
 componentWillMount() is invoked just before mounting occurs. It is called before render(), therefore calling setState() synchronously in this method will not trigger an extra rendering. Generally, we recommend using the constructor() instead.
+App configuration in your root component.
+Can call setState: Don’t. Use default state instead.
 
 omponentDidMount():
 componentDidMount() is invoked immediately after a component is mounted.
 This method is a good place to set up any subscriptions
 If you need to load data from a remote endpoint, this is a good place to instantiate the network request.
+Most Common Use Case: Starting AJAX calls to load in data for your component.
+
+Can call setState: Yes.
+
 
 componentWillReceiveProps():
  is invoked before a mounted component receives new props. If you need to update the state in response to prop changes 
- 
+ Most Common Use Case: Acting on particular prop changes to trigger state transitions.
+
+Can call setState: Yes.
+
  shouldComponentUpdate():
  Use shouldComponentUpdate() to let React know if a component’s output is not affected by the current change in state or props. The default behavior is to re-render on every state change, and in the vast majority of cases you should rely on the default behavior.
- 
+ Most Common Use Case: Controlling exactly when your component will re-render.
+
+Can call setState: No.
+
  componentWillUpdate()
  componentWillUpdate() is invoked just before rendering when new props or state are being received. Use this as an opportunity to perform preparation before an update occurs. 
- 
+ Most Common Use Case: Used instead of componentWillReceiveProps on a component that also has shouldComponentUpdate (but no access to previous props).
+
+Can call setState: No.
+
+
  componentDidUpdate() is invoked immediately after updating occurs. This method is not called for the initial render.
 
 Use this as an opportunity to operate on the DOM when the component has been updated. This is also a good place to do network requests as long as you compare the current props to previous props (e.g. a network request may not be necessary if the props have not changed).
+Most Common Use Case: Updating the DOM in response to prop or state changes.
 
+Can call setState: Yes.
