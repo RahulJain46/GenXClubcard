@@ -10,3 +10,14 @@ Dynamic Page Caching (DPC) enables the caching of HTML pages based on request pa
 A common use case is that of the anonymous user. In the example of an e-Commerce store, users who are not logged-in often see the same content and represent a large portion of hits to the site. Depending on the site design, these users' empty shopping cart and "Log In / Register" message in the header may be the same for all anonymous users. In this case, understanding if the user is anonymous based on attributes of the HTTP request will allow those users be served cached content. 
 
 Asynchronous Javascript and XML (Ajax) – Utilize Ajax to dynamically create multiple page components, which also allows for caching responses in various types of storage including sessionStorage and localStorage. Cacheable Ajax is another method in reducing the number of requests sent to origin servers.
+
+Add an Expires or a Cache-Control Header:
+
+There are two aspects to this rule:
+
+For static components: implement "Never expire" policy by setting far future Expires header
+For dynamic components: use an appropriate Cache-Control header to help the browser with conditional requests
+A first-time visitor to your page may have to make several HTTP requests, but by using the Expires header you make those components cacheable. This avoids unnecessary HTTP requests on subsequent page views. Expires headers are most often used with images, but they should be used on all components including scripts, stylesheets, and Flash components.
+Browsers (and proxies) use a cache to reduce the number and size of HTTP requests, making web pages load faster. A web server uses the Expires header in the HTTP response to tell the client how long a component can be cached. 
+
+Gzip Components:
