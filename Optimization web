@@ -21,3 +21,11 @@ A first-time visitor to your page may have to make several HTTP requests, but by
 Browsers (and proxies) use a cache to reduce the number and size of HTTP requests, making web pages load faster. A web server uses the Expires header in the HTTP response to tell the client how long a component can be cached. 
 
 Gzip Components:
+The time it takes to transfer an HTTP request and response across the network can be significantly reduced by decisions made by front-end engineers
+Compression reduces response times by reducing the size of the HTTP response.
+web clients indicate support for compression with the Accept-Encoding header in the HTTP request.
+If the web server sees this header in the request, it may compress the response using one of the methods listed by the client. The web server notifies the web client of this via the Content-Encoding header in the response
+Servers choose what to gzip based on file type, but are typically too limited in what they decide to compress. Most web sites gzip their HTML documents. It's also worthwhile to gzip your scripts and stylesheets, but many web sites miss this opportunity. In fact, it's worthwhile to compress any text response including XML and JSON. Image and PDF files should not be gzipped because they are already compressed. Trying to gzip them not only wastes CPU but can potentially increase file sizes.
+
+Put Stylesheets at the Top :
+moving stylesheets to the document HEAD makes pages appear to be loading faster.
