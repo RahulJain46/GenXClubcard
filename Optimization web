@@ -48,3 +48,17 @@ Using external files in the real world generally produces faster pages because t
  
  Avoid Redirects:
  
+ 
+ 
+Avoid Empty Image src:
+cause the same effect: browser makes another request to your server.
+
+Make favicon.ico Small and Cacheable:
+
+When I use the term “favicon” I’m referring to an icon that is associated with a particular website,
+Optimize CSS Sprites:
+Arranging the images in the sprite horizontally as opposed to vertically usually results in a smaller file size.
+"Be mobile-friendly" and don't leave big gaps between the images in a sprite. This doesn't affect the file size as much but requires less memory for the user agent to decompress the image into a pixel map.
+
+
+ 
