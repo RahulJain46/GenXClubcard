@@ -29,3 +29,13 @@ Servers choose what to gzip based on file type, but are typically too limited in
 
 Put Stylesheets at the Top :
 moving stylesheets to the document HEAD makes pages appear to be loading faster.
+
+Put Scripts at the Bottom:
+Avoid CSS Expressions:
+
+Make JavaScript and CSS External:
+Using external files in the real world generally produces faster pages because the JavaScript and CSS files are cached by the browser. JavaScript and CSS that are inlined in HTML documents get downloaded every time the HTML document is requested.
+ The only exception where inlining is preferable is with home pages, 
+ 
+ Reduce DNS Lookups:
+ 
