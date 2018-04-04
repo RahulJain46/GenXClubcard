@@ -72,3 +72,14 @@ Tagged values: V8 represents objects and numbers with 32 bits. It uses a bit to 
 Composition in this sense is about taking the output of one function and putting it directly in as the input to another function. So in other words, instead of calling one function and then calling another function, we're going to call one function, and its output is going to become at least part of the input for another function. And then the output of that could become part of the input for another function. That's what we mean by composition from a functional programming perspective at a very, very simple basic level.
 
  JavaScript is a compile language. Now it's not quite the same as how we compile our C++ or we compile our Java or things like that. There are certainly some differences in the way we deal with it, and the primary difference is that we don't distribute, that is, we don't send out the binary compiled form of our programs like we do with C++. We compile it into an exe and then we send it out to people, or you know, Java, we compile it into byte code and we send that out to the Java, JVM. We don't do that with JavaScript. We send the original source code program. So in a sense, it is compiled, but it's compiled every single time that it's run. But that doesn't mean it's not compiled. Now what do I mean by an interpreter? So the difference between a compiled language and an interpreted language is let me give you a comparison. 
+
+
+Math.round(x)
+The Number.EPSILON property represents the difference between 1 and the smallest floating point number greater than 1.
+function areTheNumbersAlmostEqual(num1, num2) {
+	return Math.abs( num1 - num2 ) < Number.EPSILON;
+}
+The stack overflow is eliminated because the event loop handles the recursion, not the call stack.
+factorial :
+(function fun(n){  return ((n>1)? n*fun(n-1): n ) })( 10 )
+Primitive type (string, number, etc.) are passed by value and objects are passed by reference.
