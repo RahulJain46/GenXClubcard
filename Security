@@ -8,3 +8,13 @@ Injection:
   
   Broken Authentication and Session Management:
   
+ So the first one here is Auth cookie theft. Now an Auth cookie is a little piece of information that the website gives the user when they first login. Every time the user comes back to the website and makes another request, they send that cookie with them for identification. attackers want that cookie. If they get the cookie, they can hijack the session. So how could they get it? Well, one way is they could exploit an XSS risk, Cross-Site Scripting risk,
+  The other thing they could do is they could Sniff it over an insecure connection. Now what I mean by that is that if that Auth cookie is going across an HTTP connection, not an HTTPS connection, using SSL, using a certificate mechanism, and an attacker can observe that traffic,
+  The other option is Session ID theft. Now inevitably, what an Auth cookie has is some form of Session ID, but it doesn't have to be persisted by cookie. Often, you'll see systems that persist the Session ID in the URL. You might see this sometimes when you log into a website and you get a very large random string in your URL. When systems are badly designed, that string is enough to log someone else in to the users account. Now this is a real risk because it means things like if the users, say, copied and pasted the URL and tweeted it, could anybody click on that and be authenticated as the user. By the same token, what if that URL is sent out via email, either by the website wanting to give the user a real shortcut to an authenticated link or, again, by the user just wanting to be social and share the URL. 
+  
+  prevent : 
+   One of them is cookies can use what we refer to as the HttpOnly flag. :  make it secure
+    That sounds basic, but the trade-off is that if you expire user session too quickly they then have to login again. Nobody likes having to login again, it's not particularly pleasant, but it is very secure. So there is this trade-off that is a very, very case-by-case decision about how can we find the right balance between expiring the session quickly to reduce that window of risk, and not expiring it so quickly that it impacts the usability and possibly impacts our attention of a customer.
+    Reset password :  put old password and then allow 
+    Password should be strong .
+    
