@@ -50,3 +50,36 @@ prevent :
  up to date of external packanges . 
  
  Sensitive Data Exposure 
+ 
+ serving a page or resources over non secure protocol . 
+ storing a password directly without any encoding , or using bad cryptography or exposing key . 
+ in the url username and password . 
+ auto complete on crediantials 
+ preventions :
+ dnt store unnecessary data. use https protocol.
+ 
+ 
+ Missing Function Level Access Control :
+ 
+  Well, what's happening here, and this is a specific case that OWASP talks about, is that there is a presentation level only security trimming in place. The link to the admin isn't shown unless you're logged in as an admin. However, the resource that sits behind that link doesn't have its own access control. The developers have said, hey, if you can't see the link, then you're not going to get to it. And that is a perfect example of the thinking that leads to Missing Function Level Access Control. Let's delve into these a little bit deeper.
+   This is a really important one, server side authentication and authorisation checks.
+   Forced browsing is actually very simple, and it's simply an attacker trying to enumerate through resources that aren't necessarily referenced by the application. I'll give you an example. On many of my websites facing the public, I often see requests for PHP admin resources. Now this is on ASP.NET websites, but attackers are forcibly going through and enumerating potentially risky URLs to try and see if they get a response. So the key to this point here is to remind you that even though a resource might not be linked in any way from the website, 
+   
+   prevent :
+   Missing Function Level Access Controls. Not just a URL, but the actual individual discrete functions that each resource on the website serves. So there are a few fundamentally important ways of protecting against this risk.
+   
+   Cross-Site Request Forgery (CSRF):
+   
+    Now the other thing that's happening here, being a POST request, is that there is a request body, and in the request body there is a TargetAccNum, so where the money is to be transferred to, and there is a dollar amount. And in this case, it's a million dollars because it's a nice spectacular number to work with for this example. So this is a very typical-looking authenticated request. Now what the attacker is actually trying to do is forge this request and here's the rub with CSRF. If an attacker can trick the user's browser into making this request, then they may be able to successfully execute a CSRF request. So how does an attacker do that? Well, it's really very simple. They already know the HTTP POST path, they can look at a bank and say, well, what's the URL that you need to post to in order to transfer money. They also already know what the form data is. They know that there needs to be a field called TargetAccNum and there needs to be a field called Amount. So really, they only need the URL and the request body, because if they can get the user to make a request to that path with that request body, then the Auth-cookie will be automatically sent with the request. That's what browsers do, send any cookie with the request that is valid for the target domain. So in reality, this can actually be a very simple attack. Let's now take a look at some of the common ways we can defend against this attack.
+    
+    prevent :
+    anti-forgery token.
+     It is usually keyed to the user, so it's unique to them, and it is usually also accompanied by a cookie which is paired to the token in the form and then both pieces of data get sent with the request and validated on the server. Now if they don't match together or if the token is not the right one for the user, then the request is rejected. So really, what all this does is adds essential randomness into the request, and it's randomness that the attacker cannot discover themselves, so they can't, say, write JavaScript to go and pull an individual user's token from the website or they can't use any other means of hijacking it assuming the token has been properly secured. 
+     
+     validating the referrer.
+      And you've got to remember, that referrer gets attached to every single request the browser makes. So checking that the referrer is not from a malicious source is one easy defence. 
+       there are controls across cross-origin resource sharing
+       
+       
+       Using Components with Known Vulnerabilities:
+       
