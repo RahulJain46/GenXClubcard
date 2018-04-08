@@ -18,3 +18,35 @@ Injection:
     Reset password :  put old password and then allow 
     Password should be strong .
     
+Cross-Site Scripting (XSS) :
+
+ And the first one is that an Attacker gives a User a URL with an XSS payload. Now what I mean by this is that the XSS is often passed as, say, part of a query string. Now how does an attacker give a user a malicious URL? Plenty of ways, social media is a real easy one, spread it around via Twitter, URL shorteners is another one. Once you see something like a Bitly address, you've got no idea what is actually in the URL. And besides, URLs have so much information in them these days that it's very hard for your average User to tell if one is potentially malicious or not. So moving on, the User gets this URL with the XSS payload and they click on the link. That link then goes off to the target website. Now the website receives that request with XSS in it and it processes the request. 
+ , the malicious data, has been emitted into the HTML response that the website has returned to the User. So that XSS is now in the User's browser. Now when an XSS attack is successful, that data might then be exfiltrated back out to the Attacker. Now I said client data here, so what do I mean by that? Well, a really good example is that XSS can access cookies within the user's browser. Now as we've discussed earlier on, cookies can include things like Auth cookies, 
+ 
+ in the url they can pass as a query string or in the search box . : SQL injection
+ 
+ Prevent :
+This is exactly what we spoke about in Injection, always validate untrusted data against a Whitelist of expected values. 
+The next one that's very specific to XSS is about always encoding the output. 
+
+Insecure Direct Object References:
+
+Let's take a look at a sample attack scenario. Now in this case we're going to have an Attacker, a Website, and a Database. So what the Attacker does is they simply change an ID in the URL. Now the website receives that request and then when it goes to the database to retrieve that record, it's asking for a different record than what the user is intended to have access to. Now when an Insecure Direct Object Reference risk is successful, the database then returns that record to the website and the website allows the attacker to exfiltrate that data. So basically, the attacker has simply said, hey, give me a different record to what I'm meant to have access to and the website is going, fine, I'll go and get that from the database, and here you go. The impact can become quite severe when the attacker can do that over and over and over again. So, for example, perhaps they're just changing a number in the URL and they're incrementing that number one by one by one and getting new records. That sounds extremely simple, and it is. So let's move on and take a look at an example of just how that attack can be mounted.
+
+That query string value can be manipulated. There's nothing to stop any one of these users simply changing the AccountId and becoming an attacker. Now, of course, it's up to the system to expect this sort of thing to happen and to put in place the appropriate controls so that if an attacker does try to simply manipulate the URL they can't gain access to resources for which they are not authorized. T
+
+prevent :
+ So the number 1 defence above and beyond all else is access controls, so being very explicit about who can access particular resources.
+ , for example, get me the balance of this specific account, so what the web application does with an indirect reference map is it takes that reference from the database, the direct reference, and it creates a temporary alternate reference that maps to the one in the database, and it's that temporary reference that it exposes externally via the website, so that now becomes an indirect object reference. The user is seeing an ID that simply has a temporary mapping through to the one on the database. Now when done well, these indirect object references only persist for the user's session. Other users can't use it and the same user can't come back and use that same indirect object reference later on, it expires. So what this means is that at no time are external users seeing internal keys. Now this is really a very case-specific implementation. I wouldn't implement this on your average website just, say, pulling product IDs back from the database, and indeed, something like a product probably doesn't need to be obfuscated in this way, but when we move into highly sensitive data, in addition to implementing proper access controls, indirect reference maps can be useful. Now finally, what really made this risk possible was having predictable keys. Now what I mean by that is that in the example we saw earlier on, the key that the attacker would have been manipulating was simply an integer. When you have an integer, it's very easy to simply add one and look at the response, add another one and look at the response. If you automate this process and you can start making many, many requests per second, it becomes easy for an attacker to simply bombard the website, brute force the website with many requests to try and pull internal data. So things like numbers that increment and are innumerable, make insecure direct object references very simple to exploit. Natural keys are another example. If, for example, we're just passing somebody's username and the username could be discovered via other means, that is also a risk, so more secure keys would be things like globally unique identifiers or cryptographically random strings. Now very frequently, they're not actually very good keys to have in the underlying database, so it can create other problems, but it does add a significant _____ defence to the Insecure Direct Object Reference risk. Ultimately, though, the number 1 defence here is those access controls. Get that right, first and foremost, and above all else. In addition to that, you may implement indirect reference maps, you may try and avoid predictable keys, but they are very secondary and tertiary _____ defences.
+ 
+ 
+ Security Misconfiguration:
+ 
+ exposing the server information like logs or able to browse directory directly .
+ 
+ Prevent : 
+ diable distory browsing , security related bydefault values should be changed like max request size is few mb can be reduced to few k , that help to prevent DOS .
+ Exception handling - should not expose internal logics .
+ up to date of external packanges . 
+ 
+ Sensitive Data Exposure 
