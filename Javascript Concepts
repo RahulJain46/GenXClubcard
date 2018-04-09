@@ -86,3 +86,4 @@ Primitive type (string, number, etc.) are passed by value and objects are passed
 
 This defination :
 Every function , while executing has reference to current call context .
+where that function is called, when it's called and how it is called .
