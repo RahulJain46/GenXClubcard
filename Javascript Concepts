@@ -83,3 +83,6 @@ The stack overflow is eliminated because the event loop handles the recursion, n
 factorial :
 (function fun(n){  return ((n>1)? n*fun(n-1): n ) })( 10 )
 Primitive type (string, number, etc.) are passed by value and objects are passed by reference.
+
+This defination :
+Every function , while executing has reference to current call context .
