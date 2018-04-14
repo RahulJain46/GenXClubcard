@@ -90,3 +90,7 @@ Primitive type (string, number, etc.) are passed by value and objects are passed
 This defination :
 Every function , while executing has reference to current call context .
 where that function is called, when it's called and how it is called .
+
+undeclared variables don’t even exist
+undefined variables exist, but don’t have anything assigned to them
+null variables exist and have null assigned to them
