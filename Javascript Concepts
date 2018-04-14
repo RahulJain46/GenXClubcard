@@ -104,4 +104,5 @@ Destructuring Assignment in ES6
 Arrow Functions in ES6 - this will have the same value as in the context of the function, 
 Block-Scoped Constructs Let and Const
 
-
+convert number into float :
+parseFloat(1).toFixed(1)
