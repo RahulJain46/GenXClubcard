@@ -106,3 +106,18 @@ Block-Scoped Constructs Let and Const
 
 convert number into float :
 parseFloat(1).toFixed(1)
+
+
+Check Array -
+1. if (Array.isArray)
+return Array.isArray(v);
+
+2. v instanceof Array
+3. if( Object.prototype.toString.call( someVar ) === '[object Array]' ) {
+    alert( 'Array!' );
+}
+
+
+
+    
+
