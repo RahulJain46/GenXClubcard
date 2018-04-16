@@ -45,3 +45,19 @@ function confirmEnding(string, target) {
   }
 }
 confirmEnding('Bastian', 'n');
+
+
+3. Three ways to repeat a string in JavaScript
+
+function repeatStringNumTimes(string, times) {
+  var repeatedString = "";
+  while (times > 0) {
+    repeatedString += string;
+    times--;
+  }
+  return repeatedString;
+}
+repeatStringNumTimes("abc", 3);
+
+4. 
+
