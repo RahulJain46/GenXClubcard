@@ -35,5 +35,13 @@ function palindrome(str) {
 }
 
 
-2. 
+2. check the alphabet at the last 
 
+function confirmEnding(string, target) {
+  if (string.substr(-target.length) === target) {
+    return true;
+  } else {
+    return false;
+  }
+}
+confirmEnding('Bastian', 'n');
