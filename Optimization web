@@ -94,3 +94,25 @@ Image compressors use a variety of techniques to reduce the number of required b
 
 Image is processed with a "lossy" filter that eliminates some pixel data
 Image is processed with a "lossless" filter that compresses the pixel data
+
+
+HTTP cache:
+
+When the server returns a response, it also emits a collection of HTTP headers, describing its content-type, length, caching directives, validation token, and more. For example, in the above exchange, the server returns a 1024-byte response, instructs the client to cache it for up to 120 seconds, and provides a validation token ("x234dff") that can be used after the response has expired to check if the resource has been modified.
+Validating cached responses with ETags:
+The server uses the ETag HTTP header to communicate a validation token.
+The validation token enables efficient resource update checks: no data is transferred if the resource has not changed.
+Assume that 120 seconds have passed since the initial fetch and the browser has initiated a new request for the same resource. First, the browser checks the local cache and finds the previous response. Unfortunately, the browser can't use the previous response because the response has now expired. At this point, the browser could dispatch a new request and fetch the new full response. However, that’s inefficient because if the resource hasn't changed, then there's no reason to download the same information that's already in cache!
+ The server generates and returns an arbitrary token, which is typically a hash or some other fingerprint of the contents of the file. The client doesn't need to know how the fingerprint is generated; it only needs to send it to the server on the next request. If the fingerprint is still the same, then the resource hasn't changed and you can skip the download.
+
+Cache-Control:
+
+Each resource can define its caching policy via the Cache-Control HTTP header.
+Cache-Control directives control who can cache the response, under which conditions, and for how long.
+
+"no-cache"  : subsequent request to the same URL without first checking with the server if the response has changed. As a result, if a proper validation token (ETag) is present, no-cache incurs a roundtrip to validate the cached response, but can eliminate the download if the resource has not changed.
+
+
+"no-store" : containing preivate data .
+
+Invalidating and updating cached responses : versioning of the file 
