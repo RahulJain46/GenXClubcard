@@ -76,6 +76,11 @@ Image optimization and rendering :
 The srcset attribute, in fact, allows us to specify a list of sources for an image, which will be delivered based on the pixel density or size of the user’s screen
 The srcset attribute includes a series of comma-separated values which, on one hand, specify an image URL and, on the other hand, the conditions under which the image will be shown. Among these conditions we can find pixel density, viewport width, or both of them.
 
+Vector images are ideal for images that consist of geometric shapes
+Vector images are zoom and resolution-independent
+Raster images should be used for complex scenes with lots of irregular shapes and details.
 
+Vector graphics use lines, points, and polygons to represent an image.
+Raster graphics represent an image by encoding the individual values of each pixel within a rectangular grid.
 
 
