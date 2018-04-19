@@ -84,3 +84,13 @@ Vector graphics use lines, points, and polygons to represent an image.
 Raster graphics represent an image by encoding the individual values of each pixel within a rectangular grid.
 
 
+SVG is an XML-based image format
+SVG files should be minified to reduce their size
+SVG files should be compressed with GZIP
+
+A raster image is a grid of pixels
+Each pixel encodes color and transparency information
+Image compressors use a variety of techniques to reduce the number of required bits per pixel to reduce file size of the image
+
+Image is processed with a "lossy" filter that eliminates some pixel data
+Image is processed with a "lossless" filter that compresses the pixel data
