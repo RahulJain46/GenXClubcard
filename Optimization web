@@ -69,3 +69,13 @@ Reduce Cookie Size:
 
  Use Cookie-free Domains for Components:
  
+
+
+
+Image optimization and rendering :
+The srcset attribute, in fact, allows us to specify a list of sources for an image, which will be delivered based on the pixel density or size of the user’s screen
+The srcset attribute includes a series of comma-separated values which, on one hand, specify an image URL and, on the other hand, the conditions under which the image will be shown. Among these conditions we can find pixel density, viewport width, or both of them.
+
+
+
+
