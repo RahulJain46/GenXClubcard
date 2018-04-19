@@ -115,4 +115,13 @@ Cache-Control directives control who can cache the response, under which conditi
 
 "no-store" : containing preivate data .
 
-Invalidating and updating cached responses : versioning of the file 
+Invalidating and updating cached responses : versioning of the file.
+
+How do you load third-party script efficiently? :
+Load the script using the async or defer attribute to avoid blocking document parsing.
+Consider Resource Hints like <link rel=preconnect> or <link rel=dns-prefetch> to perform a DNS lookup for domains hosting third-party scripts.
+With async, the browser downloads the script asynchronously while it continues to parse the HTML document. When the script finishes downloading, parsing is blocked while the script executes.
+
+With defer, the browser downloads the script asynchronously while it continues to parse the HTML document. The script doesn't run until the parsing is complete.
+
+
