@@ -130,6 +130,10 @@ copy object :
 2. var newObj = Object,assign({},someObj);
 
 
+Property descriptor  : Object.defineProperty - value, writable, configurable, enumerable .
+to change whether property is writable or not we need to make true and false value of writable . 
+configurable :  control the configuration of object .To avold the property to be deleted , use false .
+enumerable : control whether a property will show up in certain object propery enumerations .
 
 
     
