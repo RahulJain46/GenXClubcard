@@ -124,6 +124,12 @@ Null value check with ===, and typeof null is object .
 toLowerCase, toString(), CharAt(), subString(), toFixed(), 
 To check object has property or not :  hasOwnProperty .
 
+copy object :
+
+var newObj = JSON.parse(JSON.stringify(someObj));
+
+
+
 
     
 
