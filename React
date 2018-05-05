@@ -55,3 +55,22 @@ Can call setState: Yes.
 
 
 To understand immutable data you need to understand that in JavaScript non-primitive types (objects, arrays, functions…) are passed by reference and primitive types (string, number, boolean, symbol, null and undefined) are passed by value. This means that primitive types are immutable by default and you can’t change them. Instead, when you pass a primitive type to another variable, it will get a new copy of that value.
+
+
+Redux : 
+
+Why redux - one way data flow , share of props and state in multiple components 
+single store - helps in offline apps also .
+
+drawbacks of mutations ?
+implement default in redux reducer : switch statement .
+
+subscribe : used to listen all set change .
+coonect accept four paramters .
+context API 
+redux persist 
+store all the state in localstorage and see what is coming : localstorage.setItem("key", JSON.stringify(state))
+
+initialize the state , can be two levels :  app level and in reducer default .
+
+
