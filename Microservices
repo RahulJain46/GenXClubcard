@@ -1,0 +1,43 @@
+Microservices means :
+It does only one thing.
+scope of functionality , not lines of codes .
+services :
+
+Independent deployable component 
+SOA : modularity and message based communication 
+microservices force you to be more agile 
+
+Monolithic is where whole software or service in one project , 
+dividing monolithic into small parts called microservices 
+
+Advantage : smaller team , easy to manage , quicker to test and develop 
+solve system which are too big
+
+
+Monolithic : 
+props - 
+simple to deploy
+simple to test 
+simple to scale
+simple to build 
+
+cons :
+new team member productivity 
+growing teams
+code harder to undertand 
+no emerging technology 
+scale for bad reasons
+pverloaded containers
+huge database 
+
+Microservices : 
+See the problem -> divide it 
+Domain driven design - 
+Example - Domain - Ecommerce 
+          Subdomain - User , order, product 
+          
+          they will have their own database and own data and codebase
+          
+          
+          
+
