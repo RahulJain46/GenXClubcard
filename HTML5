@@ -1,0 +1,4 @@
+A facade is an extremely thin layer of abstraction around a native API .
+
+The main goal of a facade, the main goal of this thin wrapper API, is for you to have a thin layer of insulation between the code that you write across your production application and the actual APIs that sometimes develop bugs in them. Sometimes they change, sometimes they move from not being vendor prefixed to being vendor prefixed, or the other way around. Sometimes quirks occur. And if you have production code that is using the direct native APIs all over the place, say, for instance the Canvas API or the local storage API, if you're using those APIs directly and one of the environments that you're supporting your production app in changes something about it,
+ 
