@@ -2,3 +2,7 @@ A facade is an extremely thin layer of abstraction around a native API .
 
 The main goal of a facade, the main goal of this thin wrapper API, is for you to have a thin layer of insulation between the code that you write across your production application and the actual APIs that sometimes develop bugs in them. Sometimes they change, sometimes they move from not being vendor prefixed to being vendor prefixed, or the other way around. Sometimes quirks occur. And if you have production code that is using the direct native APIs all over the place, say, for instance the Canvas API or the local storage API, if you're using those APIs directly and one of the environments that you're supporting your production app in changes something about it,
  
+Storage API : 
+ The problem with cookies, of course, is that it didn't just store it on their machine, but it also transmitted all that data with every single request. So if you were storing 2 or 3 MB worth inside of a cookie, you were also creating 2 and 3 MB size requests, which was incredibly limiting.
+ session storage : duration - till session ends 
+ local storage : duration - life time 
