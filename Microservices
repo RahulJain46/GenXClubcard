@@ -37,6 +37,44 @@ Example - Domain - Ecommerce
           Subdomain - User , order, product 
           
           they will have their own database and own data and codebase
+         
+across the subdomain - consistency is imp.
+eventual consistency 
+capture data change
+event sourcing 
+Akka, kafta 
+
+Subdomain service published the event and other service consume the event and uodate the data.
+In case of multiple microservices , we need to maintain single UI which interact with different services : 
+two ways - 
+1. server side loading : composing HTML fragments developed by multiple microservice team .
+2. client side composition : 
+
+for comunication between the services :
+remote procedure invocation and messaging 
+
+
+RPC :
+
+Request and reply based protocol
+can be done sync and async 
+
+Messaging : 
+can use broker or channel for communication 
+one service pushes the changes and other subscripte to it 
+they should be loosly coupled .
+protocol Format exchange b/w services -
+binary / text 
+Text - XML, JSON, YMAL - human reable, easy to debug , easy to implement 
+
+
+
+
+
+
+         
+          
+          
           
           
           
