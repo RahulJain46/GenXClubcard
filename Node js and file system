@@ -176,3 +176,11 @@ It stands for data-intensive real-time applications. Because Node itself is very
 on I/O, it’s good at shuffling or proxying data from one pipe to another. It allows a
 server to hold a number of connections open while handling many requests and keeping
 a small memory footprint.
+
+To handle chat-related messaging, you could poll the server with Ajax. But to make
+this application as responsive as possible, you’ll avoid using traditional Ajax as a means
+to send messages. Ajax uses HTTP as a transport mechanism, and HTTP wasn’t
+designed for real-time communication. When a message is sent using HTTP, a new
+TCP/IP connection must be used. Opening and closing connections takes time, and
+the size of the data transfer is larger because HTTP headers are sent on every request.
+Instead of employing a solution reliant on HTTP,
