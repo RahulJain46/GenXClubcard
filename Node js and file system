@@ -169,3 +169,10 @@ Another React performance tool worth mentioning is why-did-you-update. This npm 
 What makes a React app slow is, most of the time, useless rerenders of many components.
 shouldComponentUpdate(). By default, React always renders a component to the virtual DOM. In other terms, it's your job as a developer to check that the props of a component didn't change and skip rendering altogether in that case.
 There are many other things you should do to keep your React app fast (using keys, lazy loading heavy routes, the react-addons-perf package, using ServiceWorkers to cache app state, going isomorphic, etc), but implementing shouldComponentUpdate correctly is the first step - and the most rewarding.
+
+
+There actually is an acronym for the types of applications Node is designed for: DIRT.
+It stands for data-intensive real-time applications. Because Node itself is very lightweight
+on I/O, it’s good at shuffling or proxying data from one pipe to another. It allows a
+server to hold a number of connections open while handling many requests and keeping
+a small memory footprint.
