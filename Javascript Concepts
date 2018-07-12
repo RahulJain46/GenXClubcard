@@ -153,6 +153,14 @@ for...in actually iterates through the enumerable properties of an object/array.
  
  for...of iterates on the other side of iterables: so instead of iterating through the keys it iterates through the values.
  
+ jQuery.extend( target [, object1 ] [, objectN ] ) : 
+ 
+ target : it is the target object 
+ object1 , object2 : source object .
+ 
+ jQuery.extend( [deep ], target, object1 [, objectN ] )
+ 
+ deep: true or false for deep copy (shallow)
  
 
 
