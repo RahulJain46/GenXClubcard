@@ -136,6 +136,23 @@ configurable :  control the configuration of object .To avold the property to be
 enumerable : control whether a property will show up in certain object propery enumerations .
 
 
-    
-    
+Use of for , foreach , for..in and for..of loop :
+For loop is the most optimise way for iteration 
+
+Foreach :
+element value
+element index
+array being traversed (I have never used this)
+
+for...in should not be used to iterate over an Array where the index order is important.
+for...in actually iterates through the enumerable properties of an object/array. : iterate over index or key 
+ However, the problem with using it to work with objects is that if the object inherits anything from another object, or has methods on its prototypes, those will be included as well. Many times, you don’t want those to be included, so you’d have to do hasOwnProperty(X)
+ 
+ If you want to iterate through objects, I’d suggest using 
+ Object.keys().forEach(function(key) { ... });
+ 
+ for...of iterates on the other side of iterables: so instead of iterating through the keys it iterates through the values.
+ 
+ 
+
 
