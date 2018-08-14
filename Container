@@ -1,0 +1,15 @@
+1. Why container ? use case ?
+
+Before 20s we were having servers - big servers,  for cooling also we need lots of money and resource . Space , 
+how much would be the size of resource ? 
+One app run on one server .
+
+
+
+then ,
+
+VMWare - they have hypervisor virtualisation technology , we have one server and multiple apps can run on it .
+
+One server - multiple apps , divide in four server , have its own CPU, hard disk etc 
+
+
