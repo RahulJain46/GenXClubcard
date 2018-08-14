@@ -36,4 +36,12 @@ By contrast, a virtual machine (VM) runs a full-blown “guest” operating syst
 
 These portable images are defined by something called a Dockerfile
 
+Operating system (OS) virtualization has grown in popularity over the last decade to enable software to run predictably and well when moved from one server environment to another. But containers provide a way to run these isolated systems on a single server or host OS.
 
+ 
+
+Containers sit on top of a physical server and its host OS—for example, Linux or Windows. Each container shares the host OS kernel and, usually, the binaries and libraries, too. Shared components are read-only. Containers are thus exceptionally “light”—they are only megabytes in size and take just seconds to start, versus gigabytes and minutes for a VM.
+
+ 
+
+Containers also reduce management overhead. Because they share a common operating system, only a single operating system needs care and feeding for bug fixes, patches, and so on. This concept is similar to what we experience with hypervisor hosts: fewer management points but slightly higher fault domain. In short, containers are lighter weight and more portable than VMs. 
