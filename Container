@@ -52,3 +52,10 @@ Docker-compose
     to create a file : touch filename
     to see the content : cat
 Docker-file : Steps to create docker image , it is like wrting sll the steps to make dishes .
+
+Docker-Architecture -
+1. docker -client and server (daemon)
+The daemon receive the command from docker client thw CLI or API .
+
+
+
