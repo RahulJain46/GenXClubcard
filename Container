@@ -56,6 +56,11 @@ Docker-file : Steps to create docker image , it is like wrting sll the steps to 
 Docker-Architecture -
 1. docker -client and server (daemon)
 The daemon receive the command from docker client thw CLI or API .
+Daemon and client can be present at the same server or different location.
+
+Docker images : it is a template to create docker container .
+container is the running intsnace of image .
+Images can be stored at local storage or registory (docker hub ).
 
 
 
