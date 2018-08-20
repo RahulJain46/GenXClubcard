@@ -45,3 +45,10 @@ Containers sit on top of a physical server and its host OS—for example, Linux 
  
 
 Containers also reduce management overhead. Because they share a common operating system, only a single operating system needs care and feeding for bug fixes, patches, and so on. This concept is similar to what we experience with hypervisor hosts: fewer management points but slightly higher fault domain. In short, containers are lighter weight and more portable than VMs. 
+
+
+Docker 
+Docker-compose 
+    to create a file : touch filename
+    to see the content : cat
+Docker-file : Steps to create docker image , it is like wrting sll the steps to make dishes .
