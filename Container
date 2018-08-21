@@ -62,5 +62,8 @@ Docker images : it is a template to create docker container .
 container is the running intsnace of image .
 Images can be stored at local storage or registory (docker hub ).
 
+DockerFile :
 
+It is the text file with automations to build image 
+Automation of Docker image creation.
 
