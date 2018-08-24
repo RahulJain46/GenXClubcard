@@ -70,4 +70,8 @@ Automation of Docker image creation.
 Docker swarn : 
 It is the set of machines which is running docker and join in the cluster .
 
+Docker machine - provision docker host/engine
+Docker swarm : schedule  containers over multiple docker engines  
+Docker compose : compose multiple docker compose .
+
 
