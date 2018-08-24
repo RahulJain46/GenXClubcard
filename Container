@@ -74,4 +74,4 @@ Docker machine - provision docker host/engine
 Docker swarm : schedule  containers over multiple docker engines  
 Docker compose : compose multiple docker compose .
 
-
+A collection of docker engines to create a cluster is called swarm .
