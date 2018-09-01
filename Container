@@ -75,3 +75,11 @@ Docker swarm : schedule  containers over multiple docker engines
 Docker compose : compose multiple docker compose .
 
 A collection of docker engines to create a cluster is called swarm .
+
+
+Docker inside :
+
+Namespace: Process ID, Network (net), file system / mount , inter proc
+Control group :which controls the memory , CPU uses .
+
+
