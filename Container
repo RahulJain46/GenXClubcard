@@ -82,4 +82,10 @@ Docker inside :
 Namespace: Process ID, Network (net), file system / mount , inter proc
 Control group :which controls the memory , CPU uses .
 
+Dockerfile :
+
+FROM : base image from which the container is build  
+RUN : commands that needs to be executed on the image
+CMD . : it specifies the entry in docker file
+-p flag : hostport: containerport
 
