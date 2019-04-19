@@ -89,3 +89,10 @@ RUN : commands that needs to be executed on the image
 CMD . : it specifies the entry in docker file
 -p flag : hostport: containerport
 
+Concept of service : 
+
+1. POD has lable which service is going to target and exposes a pod for external world .
+
+
+
+
