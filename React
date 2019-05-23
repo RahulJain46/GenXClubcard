@@ -81,3 +81,13 @@ First, the user requests a web page. They either do this by opening it in their 
 React DOM server :
 
 We take our initial state and we load the top-level component into Express or whatever is serving our application and it outputs static HTML. It doesn't need the actual DOM to do it, that's why it's the server version of React DOM. So, given a state and a parent component, it generates static markup. It does this easily because React already has a virtual DOM it uses for optimizations, but this can also be used to render an application's final HTML with no actual DOM or browser running. It doesn't have any dependencies on the window or other features that only exist in the browser, so we can happily use it in our Express file
+
+Elements have a type, which is the most important attribute, and some properties. There is also a particular property, called children, that is optional and represents the direct descendant of the element.
+
+The type is important because it tells React how to deal with the element itself. If the type is a string, the element represents a DOM node, while if the type is a function, the element is a component.
+
+reconciliation:
+When the type of the element is a function, React calls it, passing the props to get back the underlying elements. It keeps on performing the same operation recursively on the result until it gets a tree of DOM nodes that React can render on the screen. This process is called reconciliation, and it is used by both React DOM and React Native to create the user interfaces of their respective platforms
+
+react: Implements the core features of the library
+react-dom: Contains all the browser-related features
