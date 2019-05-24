@@ -91,3 +91,5 @@ When the type of the element is a function, React calls it, passing the props to
 
 react: Implements the core features of the library
 react-dom: Contains all the browser-related features
+
+a function that changes the state of an application, or modifies variables defined in the upper scope, or a function that touches external entities, such as the DOM, is considered impure. Impure functions are harder to debug, and most of the time it is not possible to apply them multiple times and expect to get the same result.
