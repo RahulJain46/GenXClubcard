@@ -93,3 +93,10 @@ react: Implements the core features of the library
 react-dom: Contains all the browser-related features
 
 a function that changes the state of an application, or modifies variables defined in the upper scope, or a function that touches external entities, such as the DOM, is considered impure. Impure functions are harder to debug, and most of the time it is not possible to apply them multiple times and expect to get the same result.
+
+
+Binding a function inside the render method has, in fact, an unexpected side-effect, because the arrow function gets fired every time the component is rendered (which happens multiple times during the lifetime of the application).
+
+Firing a function inside the render multiple times, even if it is not optimal, it is not a problem by itself.
+
+The issue is that, if we are passing the function down to a child component, it receives a new prop on each update, which leads to inefficient rendering, and that represents a problem – especially if the component is pure
