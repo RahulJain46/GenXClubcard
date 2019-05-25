@@ -100,3 +100,5 @@ Binding a function inside the render method has, in fact, an unexpected side-eff
 Firing a function inside the render multiple times, even if it is not optimal, it is not a problem by itself.
 
 The issue is that, if we are passing the function down to a child component, it receives a new prop on each update, which leads to inefficient rendering, and that represents a problem – especially if the component is pure
+
+If we pass any function as a second parameter of the setState method, it gets fired when the state is updated, and the component has been rendered.
