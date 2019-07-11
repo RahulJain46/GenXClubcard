@@ -22,3 +22,89 @@ document getelementbyid child node vs document get element by parent
 css in react ?
 inline css react ?
 media query ?
+Design an e-commerce system, where data comes from various retailers and client should be able to compare Prices of products  ?
+Find missing number in Array   ?
+Find a string is Palindrome  ?
+Coding challenge - Ticket Service   ?
+Print number 1 to 10 with a delay of 1 second. (Use a closure)   ?
+Reverse a linked list recursively and non recursively ?
+Find the loop in a linked list.  ? 
+Demonstrate basic filter/map/reduce type transformations given an example string.  >?
+Handling multiple requests  ?
+Variable Hoisting, Box Model   ?
+Write a debounce function ?
+What is semmetric html ?
+An array of json object was given and was told to get the values from array and store in the table. I tried my best to explain using pseudo code ?
+Design a webpage in which there is a menu and when we hover cursor on that menu a submenu appears. ?
+When to chose React and when to chose Angular ? 
+HOC in React ?
+How does virtual DOM in react works ?
+Join two sorted arrays to form another sorted array ?
+Polyfill for Array.map ?
+Prototypal Inheritance ?
+What is Media Tag in html ?
+Difference between == and === ? 
+How do you design a login/ signup page? asked to draw a design in paper? 
+How do you right align a form in a page? 
+JS code to reverse a string ?
+typeof typeof 5 ?
+Write logic for Fibonacci series?
+What are the possible methods to align a block vertically and horizontally center? 
+Difference between call, apply, bind ?
+In JavaScript you can define a variable in two ways: "x = 10" and "var x = 10". What's the difference between them? 
+  Srcset in images ?
+  Are you familiar with HTML5 APIs?
+  Demonstrate the passing data from parent to child component and child to parent component through code. (It was mentioned to ignore syntax since it was on paper). ?
+  Vertically and horizontally align an item using only css? 
+  Box model and Box sizing ?
+  . Ways of creating objects in JS ?
+  How does the bootstrap grid work? 
+   CSS specificity rules ?
+   What happens once you enter url into browser?
+    null == undefined; //true or false? 2. null === undefined; //true or false?
+    traversing tree or graph, debounce, throttle, building a tile game, build AutoCompleteSuggestor component, event loop, inheritance etc
+    Kanpsack problems
+    Given with a JSON file. And asked to design UI. No mocks or redlines are given. Design your interested UI. ?
+    Race condition in javascript
+In how many ways, we can include font in our web page?
+How can you make a webpage SEO friendly?
+What is the difference between Inline CSS and On Page CSS?
+Find the maximum number in an array ?
+What is Media Quaries?
+What is the Use of Doctype html ?
+Write a polyfill for a promise ?
+Different storage types on browser ?
+How to make a div center horizontally and also vertically using CSS?
+How to find length of array and merge two arrays in javascript.
+What is javascript typecasting? What is use strict in javascript?
+Questions related to IIFE
+Difference between rem and em
+how to make react bidirectional ?
+Difference between undefined and not defined
+What are the various ways of performance optimization of a react application?
+I was asked mostly about the AJAX calls and how do we make cross-domain AJAX calls, concept of JSONP , asked about GET/POST calls and timeout in AJAX. Questions on how to make a custom carousel and lazy load plugin in jquery. I was given a paper and pen to write the code for the same.
+Program to implement closure?
+New in ES6 ?
+Explain the difference between $ajax and xml http request. Also when should we use these kind of http services. ?
+deferred function
+difference between HTML5 and HTML 4
+how the browser renders the page.
+Differentiate between Observables and Promises.
+Heap sort
+Implement search bar functionality
+can we create custom event in javascript if yes thenhow?
+Do you have idea about data-tags in html5?
+Code for spiral traversal of m*n matrix
+How can we create routing without any framework with pure Javascript
+Javascript setTimeout questions
+How we will implement breadcrumb using a component.
+default position property in css
+what are differences in between __proto__ vs Prototype.
+How you will pass data from one site to another. Say from abc.com to xyz.com.
+Create a function Given Input sum(1)(2)(3)(4)(); Desired Output 10
+Questions on Flex box, Display inline-block, Difference between relative & absolute. New features in Bootstrap 4. List all methods used with transform.
+How to track user action in single page app. Design.
+write a function similar to debounce
+HTML different tags in html Primitive vs non primitive tags Why need to have different tag names? What is doctype What happens if we dont use it? JavaScript Currying and closures Using this in js Let var const React lifecycle Need for redux? How redux works Type in action dispatching Flattening an array Sum(1)(2)(3)() Event delegation Y Combining reducers Call Apply bind Why redux? When do u use refs vs state? How to update state React Virtual dom and dom diffing Using encapsulation What is SPA how is it different from multipage and its uses Css Increment width and height 3 times without using width and height Flexbox Postion properties Centering without margin top0 rlb 0 React Hoc and renderprops
+What is the purpose of the z-index and how is it used?
+
