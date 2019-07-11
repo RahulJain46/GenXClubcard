@@ -114,3 +114,50 @@ event bubbling, closure, marquee, span tag, SVG, DOM, few outputs of code snippe
 what is spread operator ?
 What is polymorphic? 
 technical round question:- diff b/w bom and dom diff b/w .detach and .romve method what is $.holdready() what is chaining what is isNaN JavaScript Data type diff b/w primitive and non primitive data type diff b/w body.onl0ad and document. ready ?
+Create a payment application to send and receive money  
+If you have 7 identical tiles and a common balance, 6 of which are of equal weight. How do you find the odd one out with minimum number of iterations.
+For the given array, find the continuous sub array with maximum sum  
+Minimum time to cross a bridge by 4 persons who take 1,2,7,10 min respectively. Only two people can cross at a time and one torch has to be there
+Given an array of api's, make api calls synchronously one after another each. Once all completed, execute a callback. Similar to Promise.all but just that all promises has to be resolved synchronously.
+if i gave you two medicine and if you will take more than two tablets of both you will die and by mistake you put 5 in to water and you can not waste the water and now what will you do?
+Create a tile game : A random tile is highlighted and if you click it, the score is incremented by 1, if you click anywhere outside, score is decreased by 1, and if you don't click, the score remains the same.
+implement sorting for comma seperatd values in string array
+implement queue using stack
+How WebPack detect the dead code that can help in Treeshaking ?
+"What is event loop , diff between call stack and task queue ?
+join two table ?
+Difference between calling a normal function and with new keyword?
+Difference between remove and detach function of jquery?
+Design stack using linked list ?
+What is event binding?
+3. Factory vs Service 4. Digest Cycle. 
+How do you stop event from propagating upward
+Is JavaScript multi-threaded or single-threaded? How to achieve multi-threading in JavaScript? 
+Array contains 0s,1s,2s. give unique array. 2.Summation of array
+I was asked to implement a pub sub and a Promise. I was supposed to know bit operations in DS/algo.
+Given series of numbers in array, find missing number. ?
+Internal working of call() (JS) function. What exactly happens when call() is called with object.
+When would you use css float and clear?
+Design a triangle using html and css ?
+tic-tac-toe implementation using core JavaScript , HTML5 and CSS3
+Find the all permutation on string and return true if any of them is palindrom, Opening and closing bracket sequence
+http and https ?
+How to remove a text box out of 5 boxes arranged in loop (Parent Box to Child box) with the help of Javascript? 
+output of setTimeOut inside for loop.
+3 settimeout and console output
+What is the lifecycle of a widget? 
+How do you fetch keys from a dynamic object?
+Sort an array without using any inbuilt methods?
+How will you approach if you were asked to design and develop a railway booking application like IRCTC
+deep equal of object  ?
+Javscript whats is output of this statement. console.log()? type question eg. console.log('1'+2+5), console.log(+true) ?
+What is Canvas?
+Difference between opacity, visibility , display none
+How cookies management works?
+Write a program to remove duplicates from an array.
+Deep and Shallow copy ?
+Closures, Hoisting, 2 way data binding, Fibonacci series, Difference between display: none and visibility: hidden  ?
+SetTimeout, SetInterval
+when to use redux over react ?
+
+
