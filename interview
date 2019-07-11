@@ -108,3 +108,9 @@ write a function similar to debounce
 HTML different tags in html Primitive vs non primitive tags Why need to have different tag names? What is doctype What happens if we dont use it? JavaScript Currying and closures Using this in js Let var const React lifecycle Need for redux? How redux works Type in action dispatching Flattening an array Sum(1)(2)(3)() Event delegation Y Combining reducers Call Apply bind Why redux? When do u use refs vs state? How to update state React Virtual dom and dom diffing Using encapsulation What is SPA how is it different from multipage and its uses Css Increment width and height 3 times without using width and height Flexbox Postion properties Centering without margin top0 rlb 0 React Hoc and renderprops
 What is the purpose of the z-index and how is it used?
 What is the difference between slice, substr, substring?
+Please write test cases and the complexity of each code. Maximum time allowed is 30 minutes. Q1. Print all prime numbers between two given numbers. For example: Function is Prime(beg,end), for Prime(4,7) it will return {5,7}, for Prime(7,16) it will return {7,11,13} Feel free to code in any language of your choice 
+Difference between document.ready and window.load.
+event bubbling, closure, marquee, span tag, SVG, DOM, few outputs of code snippets, reverse a string, mid element of doubly linked list, quick sort vs merge sort. CSS : Questions on float, padding, margin, border, visibility. They will confuse you a lot . So basics should be clear about all the CSS property. ?
+what is spread operator ?
+What is polymorphic? 
+technical round question:- diff b/w bom and dom diff b/w .detach and .romve method what is $.holdready() what is chaining what is isNaN JavaScript Data type diff b/w primitive and non primitive data type diff b/w body.onl0ad and document. ready ?
