@@ -107,4 +107,4 @@ How to track user action in single page app. Design.
 write a function similar to debounce
 HTML different tags in html Primitive vs non primitive tags Why need to have different tag names? What is doctype What happens if we dont use it? JavaScript Currying and closures Using this in js Let var const React lifecycle Need for redux? How redux works Type in action dispatching Flattening an array Sum(1)(2)(3)() Event delegation Y Combining reducers Call Apply bind Why redux? When do u use refs vs state? How to update state React Virtual dom and dom diffing Using encapsulation What is SPA how is it different from multipage and its uses Css Increment width and height 3 times without using width and height Flexbox Postion properties Centering without margin top0 rlb 0 React Hoc and renderprops
 What is the purpose of the z-index and how is it used?
-
+What is the difference between slice, substr, substring?
