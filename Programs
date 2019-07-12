@@ -115,3 +115,20 @@ function merge(arr1,arr2){
 }
 
 console.log(merge(arr1,arr2));
+
+6. Write a program to reverse an array or string
+input = [1,2,3,4]
+function reverseArray(a) {
+    var start =0;
+    var end = a.length - 1;
+    while ( start < end ) {
+        var temp = a[start];
+        a[start] = a[end];
+        a[end] = temp;
+        end--;
+        start++;
+    }
+    return a;
+}
+output = [4,3,2,1]
+
