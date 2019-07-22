@@ -184,3 +184,4 @@ designed for real-time communication. When a message is sent using HTTP, a new
 TCP/IP connection must be used. Opening and closing connections takes time, and
 the size of the data transfer is larger because HTTP headers are sent on every request.
 Instead of employing a solution reliant on HTTP,
+
