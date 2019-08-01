@@ -132,3 +132,30 @@ function reverseArray(a) {
 }
 output = [4,3,2,1]
 
+///https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
+//input : 9
+// 10 20 20 10 10 30 50 10 20
+//output : 3
+// Complete the sockMerchant function below.// 
+function sockMerchant(n, ar) {
+    var temp;
+    var count = 1;
+    for (var i = 0; i < n - 1; i++){
+        for (var j = i+1; j < n ; j++) {
+            if (ar[i] > ar[j]) {
+                temp = ar[i];
+                ar[i] = ar[j];
+                ar[j] = temp;
+            }
+            
+        }
+    }
+    var i = 0;
+    while (i < n) {
+        if (ar[i] == ar[i + 1]) {
+            count++;
+        }
+        i++;
+    }
+    return count / 2;
+}
