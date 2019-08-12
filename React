@@ -103,6 +103,9 @@ The issue is that, if we are passing the function down to a child component, it 
 
 If we pass any function as a second parameter of the setState method, it gets fired when the state is updated, and the component has been rendered.
 
+React JS - 
+React is a javascript liberary which gives user interface.
+It is decalrative in nature means we tell react what we want instead how can be done .
 
 Questiopns : 
 1. Lifecycle methods,
