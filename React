@@ -107,6 +107,21 @@ React JS -
 React is a javascript liberary which gives user interface.
 It is decalrative in nature means we tell react what we want instead how can be done .
 
+Rendering two components : 
+React.fragment 
+OR
+<div>
+  <First>
+  <second>
+</div>
+OR
+<>
+</>
+
+Passing props from parent to child and child to parent :
+https://jscomplete.com/playground/rgs1.6
+
+
 
 Questiopns : 
 1. Lifecycle methods,
