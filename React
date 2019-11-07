@@ -121,6 +121,19 @@ OR
 Passing props from parent to child and child to parent :
 https://jscomplete.com/playground/rgs1.6
 
+///pure functions - 
+functions are called “pure” because they do not attempt to change their inputs, and always return the same result for the same inputs.
+function sum(a, b) {
+  return a + b;
+}
+
+not pure func- 
+
+function withdraw(account, amount) {
+  account.total -= amount;
+}
+
+setState() that accepts a function rather than an object. That function will receive the previous state as the first argument, and the props at the time the update is applied as the second argument:
 
 
 Questiopns : 
