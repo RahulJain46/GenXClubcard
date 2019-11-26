@@ -136,6 +136,31 @@ Callback - when an asynchronous operation has a result (a result being either re
 Promise - A promise is an object that wraps an asynchronous operation and notifies when it’s done. This sounds exactly like callbacks, but the important differences are in the usage of Promises.
 A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
 
+function getAsyncData(someValue){
+    return new Promise(function(resolve, reject){
+        getData(someValue, function(error, result){
+            if(error){
+                reject(error);
+            }
+            else{
+                resolve(result);
+            }
+        })
+    });
+}
+
+getAsyncData(“someValue”)
+// Calling resolve in the Promise will get us here, to the first then(…)
+.then(function(result){
+    // Do stuff
+})
+// Calling reject in the Promise will get us here, to the catch(…)
+// Also if there is an error in any then(..) it will end up here
+.catch(function(error){
+    // Handle error
+});
+
+
 The Fetch API is an interface built into
 the browser that allows users to make network requests.
 Great, So why should you use it?
