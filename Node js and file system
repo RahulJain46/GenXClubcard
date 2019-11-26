@@ -131,6 +131,9 @@ read and hard to manage, especially when handling errors.
 On the other hand, promises are much easier to chain together and
 have a great way of handling errors.
 
+Callback - when an asynchronous operation has a result (a result being either returned data or an error that occurred during the operation), it points to a function that will be executed once that result is ready. This function is what we call a “callback function”.
+
+Promise - A promise is an object that wraps an asynchronous operation and notifies when it’s done. This sounds exactly like callbacks, but the important differences are in the usage of Promises.
 
 The Fetch API is an interface built into
 the browser that allows users to make network requests.
