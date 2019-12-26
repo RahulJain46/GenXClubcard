@@ -135,6 +135,17 @@ function withdraw(account, amount) {
 
 setState() that accepts a function rather than an object. That function will receive the previous state as the first argument, and the props at the time the update is applied as the second argument:
 
+Virtual dom : 
+Browser DOM is a browser object 
+Virtual DOM is a React object
+- A lightweight represntation of the browser DOM
+- in-memory tree data structure of plan JS objects
+- Manipulations extrmely fast compared to modifying the browser DOM
+- Created completely from scratch on every setState .
+
+Diffing algo will detect those nodes that are changed - 
+- update the entire sub tree if diffing detects that two elemts are of different types
+- using key you can hint child elemnt as stable
 
 Questiopns : 
 1. Lifecycle methods,
