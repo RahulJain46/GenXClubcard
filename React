@@ -147,6 +147,35 @@ Diffing algo will detect those nodes that are changed -
 - update the entire sub tree if diffing detects that two elemts are of different types
 - using key you can hint child elemnt as stable
 
+redux - middleware : 
+provides the capability to run code after an action is dispatched , but before it reaches the render .
+- third party extension point 
+- eg logging , async calls 
+middelware - 
+forms pipleline that wraps around the dispatch()
+pass action onwards
+restart the dispatch pipeline
+access the store data.
+
+it is typically used for  - 
+inspecting the actions and the state.
+modify the action
+dispatch other action
+stop actions from reaching the reducers
+
+Thunk - 
+
+middleware that allows you to write action creator that returns a function instead of a action
+- can be used to deplay the dispatch of an action
+- dispatch only if a certain condition is met
+useful for complex sync logic -
+ multiple dispatch 
+ conditional dispatch
+ simple async logic
+ 
+
+
+
 Questiopns : 
 1. Lifecycle methods,
 2. ES6 new features
