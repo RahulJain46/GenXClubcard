@@ -2,3 +2,7 @@
 2. Rest vs GraphQL : 
 
 # Listed 
+
+
+Passing data between resolvers
+context is a mutable Object that is provided to all resolvers. It’s created and destroyed between every request. It is a great place to store common Auth data, common models/fetchers for APIs and databases, etc. At PayPal, we’re a big Node.js shop w/ infrastructure built on Express, so we store Express’ req in there.
