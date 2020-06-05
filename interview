@@ -159,5 +159,12 @@ Deep and Shallow copy ?
 Closures, Hoisting, 2 way data binding, Fibonacci series, Difference between display: none and visibility: hidden  ?
 SetTimeout, SetInterval
 when to use redux over react ?
-
+What are the disadvantages of using closures?  
+What are memory leaks in JS?  
+ How to implement protected routes in React? What are HOCs and render props? Example s for the same  
+ Implement inheritance in JS?  
+ Difference between classical and prototypical inheritance?  
+ Implement polyfill for .bind function in JS  
+ Function declaration and function expression difference? What is hoisting?  
+ 
 
