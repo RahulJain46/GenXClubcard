@@ -27,7 +27,12 @@ Cross-Site Scripting (XSS) :
  
  Prevent :
 This is exactly what we spoke about in Injection, always validate untrusted data against a Whitelist of expected values. 
-The next one that's very specific to XSS is about always encoding the output. 
+The next one that's very specific to XSS is about always encoding the output.
+1 .  Use escaping/encoding
+2. Sanitize HTML
+3. Set the HttpOnly flag
+4 .Use a Content Security Policy
+
 
 Insecure Direct Object References:
 
