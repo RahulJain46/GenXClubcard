@@ -167,4 +167,14 @@ What are memory leaks in JS?
  Implement polyfill for .bind function in JS  
  Function declaration and function expression difference? What is hoisting?  
  
+Nvm - how to use it and how to go back to old version of node 
+webpack configuration - task manager , lint
+query selector in css
+how to share a session between different domain
+docker  - how to go inside the container
+mongodb- one to many relationship
+grapgql drawback
+jwt token - copy the token from one browser session and put it on another browser.
+react 16 new iteams
+react hooks callback and userefs
 
