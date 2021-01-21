@@ -159,3 +159,91 @@ function sockMerchant(n, ar) {
     }
     return count / 2;
 }
+
+// Find the missing number in a given integer array of 1 to 100
+//let array = [1, 2, 3, 4, 5, 6, 7, 8, 10];
+//let array = [2, 4, 6, 8, 9];
+function missingNumber(arr) {
+  let j = 1;
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i + 1] != arr[i] + 1) {
+      return arr[i] + 1;
+    }
+  }
+}
+//console.log(missingNumber(array));
+
+// Find all pairs in an array of integers whose sum is equal to a given number
+let array = [1, 5, 6, 1, 0, 1];
+function pairs(arr, target) {
+  let newMap = new Map();
+  let arr1 = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (newMap.get(arr[i])) {
+      arr1.push([arr[i], target - arr[i]]);
+    } else {
+      newMap.set(target - arr[i], i);
+    }
+  }
+  return arr1;
+}
+//console.log(pairs(array, 6));
+
+// Remove all duplicates from an array of integers
+//const arr3 = [1, 1, 1, 1, 1, 1, 1];
+//const arr3 = [1, 1,1, 2, 3, 4, 5, 6, 7, 8, 6, 6, 7, 7, 7, 10, 10];
+const arr3 = [1, 1, 1, 1, 2, 6, 7, 0, 6, 6, 7, 7, 7, 10, 10];
+function duplicatees(arr) {
+  return arr.filter((ele, index) => {
+    return arr.indexOf(ele) == index;
+  });
+}
+
+function duplicatees(arr) {
+  let newMap = new Map();
+  let duplicateArray = [];
+
+  for (let index = 0; index < arr.length; index++) {
+    //const element = arr[index];
+    if (newMap.get(arr[index])) {
+      if (duplicateArray.indexOf(arr[index]) < 0) {
+        duplicateArray.push(arr[index]);
+      }
+    } else {
+      newMap.set(arr[index], 1);
+    }
+  }
+  return newMap.keys();
+}
+
+//console.log(duplicatees(arr3));
+//Return an array showing the cumulative sum at each index of an array of integers
+function cumulativeSum(arr) {
+  let sum = [];
+  let ele = 0;
+  for (let index = 0; index < arr.length; index++) {
+    ele = arr[index] + ele;
+    sum.push(ele);
+  }
+  return sum;
+}
+//console.log(cumulativeSum(arr3));
+
+// Find the largest and smallest number in an unsorted array of integers
+
+function largeAndSmallestNUmber(arr) {
+  let min = arr[0];
+  let max = 0;
+  for (let index = 0; index < arr.length; index++) {
+    const element = arr[index];
+    if (element < min) {
+      min = element;
+    }
+    if (element > max) {
+      max = element;
+    }
+  }
+  return min;
+}
+
+console.log(largeAndSmallestNUmber(arr3));
