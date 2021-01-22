@@ -195,5 +195,12 @@ design
 2. real-time data update on client
 3. if there is a change in js or cs file , how client will get the change.
 4. 
+- You have a third party API implemented in your project, how  can you provide a behaviour which is not present in the 3P API to all implemented classes without changing the 3P API
 
+0
+▼
+I think Decorator is the pattern to be used here. We can have a Decorator interface who is maintaining the reference of the 3 rd party component object and defines an interface who conforms to the 3rd Party API provided component interface.
+
+Then concrete decorators, who have implemented a Decorator interface, can extend the functionality either by adding a new state or a new behavior. 
+This is useful when we want to dynamically assign new behavior or responsibilities to a class instead of subclassing it.
 
