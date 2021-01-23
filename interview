@@ -203,4 +203,11 @@ I think Decorator is the pattern to be used here. We can have a Decorator interf
 
 Then concrete decorators, who have implemented a Decorator interface, can extend the functionality either by adding a new state or a new behavior. 
 This is useful when we want to dynamically assign new behavior or responsibilities to a class instead of subclassing it.
+- 
+Constraints include:
 
+Input validation rules (forms/components/functions)
+Types & linting rules
+Strict modes (JS/HTML/CSS/React/...)
+Database-level constraints (PK/FK/Unique/Check/nullability)
+TESTS!
