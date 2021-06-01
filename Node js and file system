@@ -221,3 +221,5 @@ Easy to heavy CPU I/O tasks.
 Given a version number MAJOR.MINOR.PATCH, increment the MAJOR version when you make incompatible API changes, MINOR version when you add functionality in a backwards-compatible manner, and PATCH version when you make backwards-compatible bug fixe
 
 scope/private npm package - npm install @myorg/mypackage --save
+Express : 
+Node has a built in http module that allows us to create a server. The problem is that configuration and the amount of code you have to write in order to have basic features is pretty overwhelming and at times and difficult. Error prone for sure. Express is a framework that sits on top of node and uses the http module to make building serves in node not so hard.
