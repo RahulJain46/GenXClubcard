@@ -211,3 +211,7 @@ Types & linting rules
 Strict modes (JS/HTML/CSS/React/...)
 Database-level constraints (PK/FK/Unique/Check/nullability)
 TESTS!
+ 
+ 1. Box model, how not to include padding and margin not to width.
+ 2. What is grid in css
+ 3. 
