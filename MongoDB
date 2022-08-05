@@ -2,3 +2,6 @@ Create the mongoDB :
 How to show db in mongo : 
 how to see instances in mongo running : 
 
+indexes have their price: every write (insert, update, or delete) will take longer for every
+index you add. This is because MongoDB has to update all your indexes whenever your
+data changes, as well as the document itself
