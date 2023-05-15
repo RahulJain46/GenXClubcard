@@ -1,0 +1,61 @@
+Solution 1
+
+function twoNumberSum(array, targetSum) {
+  // Write your code here.
+  if(array.length == 1){
+     return []
+  }
+  const newMap = new Map();
+   const arr = []
+   for(let i =0; i< array.length;i++){
+     newMap.set(array[i] , i)
+   }
+    for(let i =0; i< array.length;i++){
+         if( newMap.has(targetSum - array[i]) && (targetSum - array[i]) != array[i]){
+               arr.push(array[i])
+               arr.push(targetSum-array[i])
+               return arr
+         }
+       
+   }
+
+  return arr
+ 
+}
+
+// Do not edit the line below.
+exports.twoNumberSum = twoNumberSum;
+
+solution 2 
+
+function twoNumberSum(array, targetSum) {
+  // Write your code here.
+  const newMap = new Map()
+     for (let index = 0; index < array.length; index++) {
+             if(newMap.has(targetSum - array[index])){
+                 return [array[index], targetSum - array[index]]
+             }
+             newMap.set(array[index], index)
+     }
+    return []
+}
+
+// Do not edit the line below.
+exports.twoNumberSum = twoNumberSum;
+
+Solution  3
+
+function twoNumberSum(array, targetSum) {
+  // Write your code here.
+  const newMap = new Map()
+     for (let index = 0; index < array.length; index++) {
+             if(newMap.has(targetSum - array[index])){
+                 return [array[index], targetSum - array[index]]
+             }
+             newMap.set(array[index], index)
+     }
+    return []
+}
+
+// Do not edit the line below.
+exports.twoNumberSum = twoNumberSum;
