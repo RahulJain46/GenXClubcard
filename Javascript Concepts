@@ -183,6 +183,11 @@ Executes the function it was called upon right away.
 The call() method does not make a copy of the function it is being called on.
 Bind :  The bind() method creates a new function that, when called, has its this keyword set to the provided value.
 Apply : apply() expects an array of all of our parameters.
+
+Currying is a pattern where a function with more than one parameter is broken into multiple functions that, 
+when called in series, will accumulate all of the required parameters one at a time.
+
 Inheritance : 
-In JavaScript when we create the object it does not copy the properties or behavior, it creates a link. Similar kind of linkage gets created in case of extend of class as well.
+In JavaScript when we create the object it does not copy the properties or behavior, 
+it creates a link. Similar kind of linkage gets created in case of extend of class as well.
 
