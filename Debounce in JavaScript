@@ -62,3 +62,29 @@ function debounce(delay, callback) {
         }, delay);
     };
 }
+
+
+function throttle(func, wait) {
+    let shouldThrottle = false;
+    return function(...args){
+         if(shouldThrottle){
+            return;
+         }
+         shouldThrottle= true;
+        setTimeout(function(){
+             shouldThrottle = false;
+          }, wait)
+         func.apply(this, args)
+    }
+}
+
+function debounce(func, wait) {
+   let timerId = null
+   return function(...args){
+    const context = this;
+    clearTimeout(timerId)
+    timerId = setTimeout((){
+          func.apply(context, args)
+      }, wait)
+   }
+}
