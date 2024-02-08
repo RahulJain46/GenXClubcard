@@ -45,6 +45,7 @@ $(window).scroll(throttle(300, function() {
 // wait period to be reset upon receipt of a call to the
 // debounced routine.
 //
+Debouncing is a method that limits the rate at which a function gets called. It works by delaying the execution of a function until a certain amount of time has passed without any additional function calls. If another function call happens within this time frame, the timer resets and the function execution is delayed again.
 function debounce(delay, callback) {
     var timeout = null;
     return function () {
